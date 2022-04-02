@@ -1,0 +1,20 @@
+.link-text:hover {
+  opacity: 0.75;
+}
+
+.link-text--external:after {
+  content: '🡭';
+  padding-left: 0.125rem;
+}
+
+.link-image {
+  opacity: 0.75;
+}
+
+.link-image:hover {
+  opacity: 1;
+}
+
+.link-page {
+  @apply text-sm mx-2 pb-1;
+}

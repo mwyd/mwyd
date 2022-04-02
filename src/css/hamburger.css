@@ -1,0 +1,29 @@
+.hamburger {
+  width: 20px;
+  height: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @apply mx-2 md:hidden cursor-pointer z-40;
+}
+
+.hamburger > div {
+  height: 2px;
+  @apply bg-black-200 dark:bg-lightgrey-200;
+}
+
+.hamburger > div {
+  transform-origin: right;
+}
+
+.hamburger--open > div:nth-child(1) {
+  transform: rotate(-45deg);
+}
+
+.hamburger--open > div:nth-child(2) {
+  display: none;
+}
+
+.hamburger--open > div:nth-child(3) {
+  transform: rotate(45deg);
+}
