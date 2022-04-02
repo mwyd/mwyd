@@ -12,7 +12,7 @@ export default function App() {
       <HashRouter>
         <div className="flex flex-col w-full h-screen">
           <NavBar />
-          <main className="w-full h-full max-w-hd m-auto pt-14 p-4">
+          <main className="w-full h-full max-w-hd m-auto pt-0 p-4 mt-14 overflow-auto">
             <Routes>
               <Route 
                 path="/" 
