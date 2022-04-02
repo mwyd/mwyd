@@ -3,8 +3,8 @@
 }
 
 .link-text--external:after {
-  content: '🡭';
-  padding-left: 0.125rem;
+  content: '➔';
+  @apply pl-1;
 }
 
 .link-image {
