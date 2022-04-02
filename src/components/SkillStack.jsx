@@ -1,13 +1,13 @@
-export default function SkillStack({ name, abilities }) {
+export default function SkillStack({ name, stack }) {
   return (
     <div className="p-4 bg-white-400 dark:bg-black-700 rounded-sm">
       <h2 className="pb-2 text-lg">
         {name}
       </h2>
-      <ul className="ml-4 list-disc text-sm">
-        {abilities.map((ability, i) => 
-          <li key={`ability-${i}`}>
-            {ability}
+      <ul className="ml-4 list-[circle] text-sm">
+        {stack.map((tech, i) => 
+          <li key={`tech-${i}`}>
+            {tech}
           </li>
         )}
       </ul>

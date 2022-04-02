@@ -10,9 +10,9 @@ export default function App() {
   return (
     <ThemeProvider>
       <HashRouter>
-        <main className="flex flex-col w-full h-screen">
+        <div className="flex flex-col w-full h-screen">
           <NavBar />
-          <div className="w-full h-full max-w-hd m-auto pt-14 p-4">
+          <main className="w-full h-full max-w-hd m-auto pt-14 p-4">
             <Routes>
               <Route 
                 path="/" 
@@ -27,8 +27,8 @@ export default function App() {
                 element={<SkillsPage />}
               />
             </Routes>
-          </div>
-        </main>
+          </main>
+        </div>
       </HashRouter>
     </ThemeProvider>
   )
