@@ -22,6 +22,9 @@ module.exports = {
           "700": "#242424"
         }
       },
+      height: {
+        "main-full": "calc(100vh - theme(spacing.14))",
+      },
       maxWidth: {
         "hd": "1280px"
       }

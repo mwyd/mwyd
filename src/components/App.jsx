@@ -13,26 +13,28 @@ export default function App() {
       <HashRouter>
         <div className="flex flex-col w-full h-screen">
           <NavBar />
-          <main className="w-full h-full max-w-hd m-auto px-4 mt-14">
-            <Routes>
-              <Route 
-                path="/" 
-                element={<HomePage />}
-              />
-              <Route 
-                path="/projects" 
-                element={<ProjectsPage />}
-              />
-              <Route 
-                path="/skills" 
-                element={<SkillsPage />}
-              />
-              <Route
-                path="*"
-                element={<NotFoundPage />}
-              />
-            </Routes>
-          </main>
+          <div className="w-full h-full mt-14 overflow-auto">
+            <main className="w-full max-w-hd mx-auto px-4">
+              <Routes>
+                <Route 
+                  path="/" 
+                  element={<HomePage />}
+                />
+                <Route 
+                  path="/projects" 
+                  element={<ProjectsPage />}
+                />
+                <Route 
+                  path="/skills" 
+                  element={<SkillsPage />}
+                />
+                <Route
+                  path="*"
+                  element={<NotFoundPage />}
+                />
+              </Routes>
+            </main>
+          </div>
         </div>
       </HashRouter>
     </ThemeProvider>
