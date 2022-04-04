@@ -8,16 +8,12 @@ const skills = [
     stack: ['PHP', 'Node.js', 'Laravel', 'Express.js', 'Mysql', 'Maria DB', 'Firebase', 'MVC', 'REST']
   },
   { 
-    name: 'Server administration', 
-    stack: ['Nginx', 'Apache', 'CRON']
-  },
-  { 
     name: 'Cloud platforms', 
     stack: ['Google Cloud', 'Microsoft Azure']
   },
   { 
     name: 'Other', 
-    stack: ['Git', 'Github', 'Docker'] 
+    stack: ['Git', 'Github', 'Docker', 'Nginx', 'Apache', 'CRON'] 
   }
 ]
 
