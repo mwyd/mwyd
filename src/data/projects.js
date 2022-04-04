@@ -22,7 +22,8 @@ const projects = [
     description: 'Lichess games observer, simple analyzer and data visualization.',
     tags: ['Web application', 'React', 'React Router', 'BEM', 'Express.js', 'Sequelize', 'Docker', 'Maria DB', 'REST'],
     links: [
-      { title: 'Github', url: 'https://github.com/mwyd/chess-app-backend' }
+      { title: 'Github', url: 'https://github.com/mwyd/chess-app-backend' },
+      { title: 'Page', url: 'http://chess.mwyd.me' }
     ]
   },
   {
