@@ -1,5 +1,5 @@
 <p>
 Hello!<br>
 I am Michał<br>
-Full-Stack Developer
+Full Stack Developer
 </p>
