@@ -24,19 +24,20 @@ export default function NavBar() {
   const { pathname } = useLocation()
 
   return (
-    <nav className="flex h-14 flex-col p-2 border-b border-b-lightgrey-700 dark:border-b-darkgrey-200 fixed w-full bg-white-0 dark:bg-black-200 z-40">
+    <nav
+      className="flex h-14 flex-col p-2 border-b border-b-lightgrey-700 dark:border-b-darkgrey-200 fixed w-full bg-white-0 dark:bg-black-200 z-40">
       <div className="flex justify-between items-center w-full max-w-hd m-auto">
-        <Link 
+        <Link
           className="text-xl mx-2 link-text"
-          to="/" 
+          to="/"
         >
           m<span className="text-red-500">.</span>wyd
         </Link>
         <div className={sideMenuClass(isMenuOpen)}>
           <div className="side-menu__pages">
-            {links.map(({ name, path }, i) => 
-              <Link 
-                className={linkClass(pathname === path)} 
+            {links.map(({ name, path }, i) =>
+              <Link
+                className={linkClass(pathname === path)}
                 to={path}
                 key={`link-${i}`}
               >
@@ -44,17 +45,17 @@ export default function NavBar() {
               </Link>
             )}
           </div>
-          <ThemeSwitch />
+          <ThemeSwitch/>
           <div className="side-menu__socials flex">
-            {socials.map((data, i) => 
-              <ImageLink 
+            {socials.map((data, i) =>
+              <ImageLink
                 key={`social-${i}`}
-                {...data} 
+                {...data}
               />
             )}
           </div>
         </div>
-        <Hamburger 
+        <Hamburger
           isMenuOpen={isMenuOpen}
           setIsMenuOpen={setIsMenuOpen}
         />

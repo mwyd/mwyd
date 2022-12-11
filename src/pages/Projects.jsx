@@ -7,8 +7,8 @@ export default function ProjectsPage() {
       <h2 className="text-4xl font-bold my-8 border-l-8 border-l-red-500 pl-2">
         Projects
       </h2>
-      {projects.map((data, i) => 
-        <div 
+      {projects.map((data, i) =>
+        <div
           className="pb-4"
           key={`project-${i}`}
         >

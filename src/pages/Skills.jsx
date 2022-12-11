@@ -7,8 +7,8 @@ export default function SkillsPage() {
       <h2 className="text-4xl font-bold my-8 border-l-8 border-l-red-500 pl-2">
         Skills
       </h2>
-      {skills.map((data, i) => 
-        <div 
+      {skills.map((data, i) =>
+        <div
           className="pb-4"
           key={`skill-${i}`}
         >

@@ -5,7 +5,7 @@ export default function SkillStack({ name, stack }) {
         {name}
       </h2>
       <ul className="ml-4 list-[circle] text-sm">
-        {stack.map((tech, i) => 
+        {stack.map((tech, i) =>
           <li key={`tech-${i}`}>
             {tech}
           </li>

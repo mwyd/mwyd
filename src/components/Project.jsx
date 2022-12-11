@@ -11,16 +11,16 @@ export default function Project({ name, description, tags, links }) {
         {description}
       </p>
       <div className="flex flex-wrap gap-2 pb-3">
-        {tags.map((tag, i) => 
-          <Tag 
+        {tags.map((tag, i) =>
+          <Tag
             key={`tag-${i}`}
-            title={tag} 
+            title={tag}
           />
         )}
       </div>
       <div className="flex flex-wrap gap-2">
-        {links.map((data, i) => 
-          <ExternalLink 
+        {links.map((data, i) =>
+          <ExternalLink
             key={`link-${i}`}
             {...data}
           />

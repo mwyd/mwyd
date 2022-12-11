@@ -8,7 +8,7 @@ export default function NotFound() {
       <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
         404
       </h1>
-      <button 
+      <button
         className="pt-4 link-text"
         onClick={() => navigate(-1)}
       >

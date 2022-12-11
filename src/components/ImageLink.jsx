@@ -12,8 +12,8 @@ export default function ImageLink({ title, url }) {
       target="_blank"
       rel="noreferrer"
     >
-      <img 
-        className="w-[20px] h-[20px]" 
+      <img
+        className="w-[20px] h-[20px]"
         src={`/img/${title}-${themeColor}.png`}
         alt={title}
       />

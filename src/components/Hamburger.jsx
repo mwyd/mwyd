@@ -8,7 +8,7 @@ const hamburgerClass = (isOpen) => classNames([
 
 export default function Hamburger({ isMenuOpen, setIsMenuOpen }) {
   return (
-    <div 
+    <div
       className={hamburgerClass(isMenuOpen)}
       onClick={() => setIsMenuOpen(isMenuOpen => !isMenuOpen)}
     >
@@ -16,5 +16,5 @@ export default function Hamburger({ isMenuOpen, setIsMenuOpen }) {
       <div></div>
       <div></div>
     </div>
-  ) 
+  )
 }

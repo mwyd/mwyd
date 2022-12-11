@@ -1,4 +1,3 @@
-
 import { HashRouter, Routes, Route } from 'react-router-dom'
 import ThemeProvider from './ThemeProvider'
 import NavBar from './NavBar'
@@ -12,25 +11,25 @@ export default function App() {
     <ThemeProvider>
       <HashRouter>
         <div className="flex flex-col w-full h-screen">
-          <NavBar />
+          <NavBar/>
           <div className="w-full h-full mt-14 overflow-auto">
             <main className="w-full max-w-hd mx-auto px-4">
               <Routes>
-                <Route 
-                  path="/" 
-                  element={<HomePage />}
+                <Route
+                  path="/"
+                  element={<HomePage/>}
                 />
-                <Route 
-                  path="/projects" 
-                  element={<ProjectsPage />}
+                <Route
+                  path="/projects"
+                  element={<ProjectsPage/>}
                 />
-                <Route 
-                  path="/skills" 
-                  element={<SkillsPage />}
+                <Route
+                  path="/skills"
+                  element={<SkillsPage/>}
                 />
                 <Route
                   path="*"
-                  element={<NotFoundPage />}
+                  element={<NotFoundPage/>}
                 />
               </Routes>
             </main>

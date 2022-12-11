@@ -1,5 +1,5 @@
 export default Object.freeze({
-    DARK: 'dark',
-    LIGHT: 'light',
-    AUTO: 'auto'
+  DARK: 'dark',
+  LIGHT: 'light',
+  AUTO: 'auto'
 })

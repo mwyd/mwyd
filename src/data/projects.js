@@ -5,7 +5,10 @@ const projects = [
     tags: ['Chrome extension', 'Vue', 'Tailwind'],
     links: [
       { title: 'Github', url: 'https://github.com/mwyd/wax-bot' },
-      { title: 'Chrome web store', url: 'https://chrome.google.com/webstore/detail/wax-bot/bflfdlbidibjafpgigbmfnikagdelkdd' }
+      {
+        title: 'Chrome web store',
+        url: 'https://chrome.google.com/webstore/detail/wax-bot/bflfdlbidibjafpgigbmfnikagdelkdd'
+      }
     ]
   },
   {
@@ -14,7 +17,10 @@ const projects = [
     tags: ['Chrome extension', 'Vue', 'Vuex', 'BEM'],
     links: [
       { title: 'Github', url: 'https://github.com/mwyd/sp-bot' },
-      { title: 'Chrome web store', url: 'https://chrome.google.com/webstore/detail/sp-bot/mfinpmohhocnehghkjkkaeibpggddcef' }
+      {
+        title: 'Chrome web store',
+        url: 'https://chrome.google.com/webstore/detail/sp-bot/mfinpmohhocnehghkjkkaeibpggddcef'
+      }
     ]
   },
   {

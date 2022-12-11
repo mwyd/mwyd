@@ -32,19 +32,19 @@ export default function ThemeProvider({ children }) {
   }
 
   const getThemeIcon = () => {
-    let icon = '☀️'
-
-    if(theme === themeEnum.DARK) {
-        icon = '🌙'
-    } else if(theme === themeEnum.AUTO) {
-        icon = '🌓'
+    if (theme === themeEnum.LIGHT) {
+      return '☀️'
     }
 
-    return icon
+    if (theme === themeEnum.DARK) {
+      return '🌙'
+    }
+
+    return '🌓'
   }
 
   useEffect(() => {
-    if(themeColor === themeEnum.DARK) {
+    if (themeColor === themeEnum.DARK) {
       document.documentElement.classList.add('dark')
     } else {
       document.documentElement.classList.remove('dark')
@@ -53,7 +53,7 @@ export default function ThemeProvider({ children }) {
 
   useEffect(() => {
     const listener = (e) => {
-      if(localStorage.getItem('theme') !== themeEnum.AUTO) {
+      if (localStorage.getItem('theme') !== themeEnum.AUTO) {
         return
       }
 
@@ -74,6 +74,6 @@ export default function ThemeProvider({ children }) {
   )
 }
 
-export { 
+export {
   ThemeContext
 }

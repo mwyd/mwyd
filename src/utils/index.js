@@ -5,12 +5,12 @@ const detectThemeColor = () => window.matchMedia('(prefers-color-scheme: dark)')
 const loadTheme = () => {
   let theme = localStorage.getItem('theme')
 
-  if(!theme) {
+  if (!theme) {
     theme = themeEnum.AUTO
 
     localStorage.setItem('theme', theme)
   }
-  
+
   return theme
 }
 

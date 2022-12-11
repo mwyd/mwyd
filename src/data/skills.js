@@ -5,7 +5,7 @@ const skills = [
   },
   { 
     name: 'Backend', 
-    stack: ['PHP', 'Node.js', 'Laravel', 'Express.js', 'Mysql', 'Maria DB', 'Firebase', 'MVC', 'REST']
+    stack: ['PHP', 'Laravel', 'Symfony', 'Node.js', 'Express.js', 'Mysql', 'Maria DB', 'Firebase', 'MVC', 'REST']
   },
   { 
     name: 'Cloud platforms', 
@@ -13,7 +13,7 @@ const skills = [
   },
   { 
     name: 'Other', 
-    stack: ['Git', 'Github', 'Docker', 'Nginx', 'Apache', 'CRON'] 
+    stack: ['Git', 'Github', 'Docker', 'Nginx', 'Apache']
   }
 ]
 
