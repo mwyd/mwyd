@@ -1,3 +1,4 @@
+import React from "react";
 import { createHashRouter } from "react-router-dom";
 import HomePage from "../pages/Home";
 import ProjectsPage from "../pages/Projects";

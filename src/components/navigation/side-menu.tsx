@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 import { Link, useLocation } from "react-router-dom";
-import ThemeSwitch from "../theme/theme-switch";
+import ThemeSwitch from "../theme-switch";
 import ImageLink from "../links/image-link";
 import socials from "../../data/socials";
 import links from "../../data/links";
@@ -17,11 +17,11 @@ const sideMenuClass = (isOpen: boolean) => classNames([
   isOpen ? 'side-menu--open' : ''
 ]);
 
-interface SideMenuProps {
+interface Props {
   isOpen: boolean;
 }
 
-const SideMenu: React.FC<SideMenuProps> = ({ isOpen }) => {
+export default function SideMenu({ isOpen }: Props) {
   const { pathname } = useLocation();
 
   return (
@@ -37,7 +37,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen }) => {
           </Link>
         )}
       </div>
-      <ThemeSwitch />
+      <ThemeSwitch/>
       <div className="side-menu__socials flex">
         {socials.map((data, i) =>
           <ImageLink
@@ -49,5 +49,3 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen }) => {
     </div>
   );
 }
-
-export default SideMenu;

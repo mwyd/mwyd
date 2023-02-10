@@ -7,12 +7,12 @@ const hamburgerClass = (isOpen: boolean) => classNames([
   isOpen ? 'hamburger--open' : ''
 ]);
 
-interface HamburgerProps {
+interface Props {
   isOpen: boolean;
   setIsOpen: (isOpen: boolean) => void;
 }
 
-const Hamburger: React.FC<HamburgerProps> = ({ isOpen, setIsOpen }) => {
+export default function Hamburger({ isOpen, setIsOpen }: Props) {
   return (
     <button
       type="button"
@@ -26,5 +26,3 @@ const Hamburger: React.FC<HamburgerProps> = ({ isOpen, setIsOpen }) => {
     </button>
   );
 }
-
-export default Hamburger;

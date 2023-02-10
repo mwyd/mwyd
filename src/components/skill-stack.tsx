@@ -1,12 +1,10 @@
 import React from "react";
 import { Skill as SkillType } from "../types/skill";
+import BasePanel from "./containers/base-panel";
 
-const SkillStack: React.FC<SkillType> = ({ name, stack }) => {
+export default function SkillStack({ name, stack }: SkillType) {
   return (
-    <div className="p-4 bg-white-400 dark:bg-black-700 rounded-sm">
-      <h2 className="pb-2 text-lg">
-        {name}
-      </h2>
+    <BasePanel title={name}>
       <ul className="ml-4 list-[circle] text-sm">
         {stack.map((tech, i) =>
           <li key={`tech-${i}`}>
@@ -14,8 +12,6 @@ const SkillStack: React.FC<SkillType> = ({ name, stack }) => {
           </li>
         )}
       </ul>
-    </div>
+    </BasePanel>
   );
 }
-
-export default SkillStack;

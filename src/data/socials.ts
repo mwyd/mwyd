@@ -1,4 +1,4 @@
-import { ExternalLink } from "../types/external-link";
+import { ExternalLink } from "../types/link";
 
 const socials: ExternalLink[] = [
   { title: 'mail', url: 'mailto:michalwydrzynski@ouutlok.com' },

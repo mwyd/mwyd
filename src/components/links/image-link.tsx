@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
-import ThemeContext from "../theme/theme-context";
-import { ExternalLink as ExternalLinkType } from "../../types/external-link";
+import React from "react";
+import { ExternalLink as ExternalLinkType } from "../../types/link";
+import useTheme from "../../hooks/use-theme";
 
-const ImageLink: React.FC<ExternalLinkType> = ({ title, url }) => {
-  const { themeColor } = useContext(ThemeContext);
+export default function ImageLink({ title, url }: ExternalLinkType) {
+  const { color: themeColor } = useTheme();
 
   return (
     <a
@@ -21,5 +21,3 @@ const ImageLink: React.FC<ExternalLinkType> = ({ title, url }) => {
     </a>
   );
 }
-
-export default ImageLink;

@@ -1,9 +1,8 @@
 import React from "react";
-import { useContext } from "react";
-import ThemeContext from "./theme-context";
+import useTheme, { toggleTheme } from "../hooks/use-theme";
 
-const ThemeSwitch: React.FC = () => {
-  const { toggleTheme, getThemeIcon } = useContext(ThemeContext);
+export default function ThemeSwitch() {
+  const { icon: themeIcon } = useTheme();
 
   return (
     <button
@@ -15,9 +14,7 @@ const ThemeSwitch: React.FC = () => {
       <span className="text-sm md:hidden inline">
         Theme
       </span>
-      {getThemeIcon()}
+      {themeIcon}
     </button>
   );
 }
-
-export default ThemeSwitch;

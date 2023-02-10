@@ -1,9 +1,9 @@
 import React from "react";
-import SkillStack from '../components/skill-stack';
-import skills from '../data/skills';
+import SkillStack from "../components/skill-stack";
 import DefaultLayout from "../layouts/default-layout";
+import skills from "../data/skills";
 
-const SkillsPage: React.FC = () => {
+export default function SkillsPage() {
   return (
     <DefaultLayout>
       <section>
@@ -20,7 +20,5 @@ const SkillsPage: React.FC = () => {
         )}
       </section>
     </DefaultLayout>
-  )
+  );
 }
-
-export default SkillsPage;

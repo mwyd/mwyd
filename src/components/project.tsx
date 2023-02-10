@@ -2,13 +2,11 @@ import React from "react";
 import Tag from "./tag";
 import ExternalLink from "./links/external-link";
 import { Project as ProjectType } from "../types/project";
+import BasePanel from "./containers/base-panel";
 
-const Project: React.FC<ProjectType> = ({ name, description, tags, links }) => {
+export default function Project({ name, description, tags, links }: ProjectType) {
   return (
-    <div className="p-4 bg-white-400 dark:bg-black-700 rounded-sm">
-      <h2 className="pb-2 text-lg">
-        {name}
-      </h2>
+    <BasePanel title={name}>
       <p className="text-sm pb-3">
         {description}
       </p>
@@ -28,8 +26,6 @@ const Project: React.FC<ProjectType> = ({ name, description, tags, links }) => {
           />
         )}
       </div>
-    </div>
+    </BasePanel>
   );
 }
-
-export default Project;

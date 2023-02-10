@@ -1,7 +1,7 @@
 import React from "react";
 import DefaultLayout from "../layouts/default-layout";
 
-const HomePage: React.FC = () => {
+export default function HomePage() {
   return (
     <DefaultLayout>
       <header className="w-full h-main-full flex flex-col justify-center items-center">
@@ -12,7 +12,5 @@ const HomePage: React.FC = () => {
         </h1>
       </header>
     </DefaultLayout>
-  )
+  );
 }
-
-export default HomePage;

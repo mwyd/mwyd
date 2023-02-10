@@ -1,4 +1,4 @@
-import { NavLink } from "../types/nav-link";
+import { NavLink } from "../types/link";
 
 const links: NavLink[] = [
   { path: '/projects', name: 'Projects' },

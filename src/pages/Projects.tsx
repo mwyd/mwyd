@@ -1,9 +1,9 @@
 import React from "react";
-import Project from '../components/project';
-import projects from '../data/projects';
+import Project from "../components/project";
 import DefaultLayout from "../layouts/default-layout";
+import projects from "../data/projects";
 
-const ProjectsPage: React.FC = () => {
+export default function ProjectsPage() {
   return (
     <DefaultLayout>
       <section>
@@ -20,7 +20,5 @@ const ProjectsPage: React.FC = () => {
         )}
       </section>
     </DefaultLayout>
-  )
+  );
 }
-
-export default ProjectsPage;

@@ -1,4 +1,4 @@
-import { ExternalLink } from "./external-link";
+import { ExternalLink } from "./link";
 
 export type Project = {
   name: string;

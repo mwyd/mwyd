@@ -1,7 +1,7 @@
 import React from "react";
-import { ExternalLink as ExternalLinkType } from "../../types/external-link";
+import { ExternalLink as ExternalLinkType } from "../../types/link";
 
-const ExternalLink: React.FC<ExternalLinkType> = ({ title, url }) => {
+export default function ExternalLink({ title, url }: ExternalLinkType) {
   return (
     <a
       className="link-text link-text--external text-xs"
@@ -13,5 +13,3 @@ const ExternalLink: React.FC<ExternalLinkType> = ({ title, url }) => {
     </a>
   );
 }
-
-export default ExternalLink;

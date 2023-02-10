@@ -1,8 +1,8 @@
 import React from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
-const NotFoundPage: React.FC = () =>  {
-  const navigate = useNavigate()
+export default function NotFoundPage() {
+  const navigate = useNavigate();
 
   return (
     <div className="w-full h-main-full flex flex-col justify-center items-center">
@@ -10,13 +10,13 @@ const NotFoundPage: React.FC = () =>  {
         404
       </h1>
       <button
-        className="pt-4 link-text"
+        className="mt-4 link-text"
+        type="button"
+        title="go-back"
         onClick={() => navigate(-1)}
       >
         Go back
       </button>
     </div>
-  )
+  );
 }
-
-export default NotFoundPage;
