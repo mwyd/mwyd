@@ -9,6 +9,7 @@
 
 .hamburger > div {
   height: 2px;
+  width: 100%;
   @apply bg-black-200 dark:bg-lightgrey-200;
 }
 
