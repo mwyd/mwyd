@@ -8,19 +8,19 @@ import NotFoundPage from "../pages/NotFound";
 const router = createHashRouter([
   {
     path: '/',
-    element: <HomePage />
+    element: <HomePage/>
   },
   {
     path: '/projects',
-    element: <ProjectsPage />
+    element: <ProjectsPage/>
   },
   {
     path: '/skills',
-    element: <SkillsPage />
+    element: <SkillsPage/>
   },
   {
     path: '*',
-    element: <NotFoundPage />
+    element: <NotFoundPage/>
   }
 ]);
 
